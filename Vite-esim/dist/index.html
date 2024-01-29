@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lounari</title>
+  
+  <script type="module" crossorigin src="./assets/index-37b02c97.js"></script>
+  <link rel="stylesheet" href="./assets/index-c996a8b0.css">
+</head>
+
+<body>
+  <body>
+    <div class="support">
+        <input  type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" class="checkbox-label">
+          <i id="icon_sun" class="material-icons" >wb_sunny</i>
+          <i id="icon_moon" class="material-icons">brightness_3</i>
+          <span class="ball"></span>
+        </label>
+      </div>
+        <div class = "koko-laatikko" >
+
+          <header>
+                    <nav class = "clearfix" id = "Mynav"><h2 id = "logo">Lounari </h2>
+                        <ul>
+                        <li><a href="index.html">Ravintolat</a></li>
+                        <li><a href="contact.asp">Infoa</a></li>
+                        <li class="burger"><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                          <i class="fa fa-bars"></i></li>
+                        </a>
+                    </ul>
+                    </nav>
+            </header>
+            <div class = "clear"></div>
+            <div class="hero-image">
+                  <div class="hero-info">
+                    <div class="hero-header">
+                        <h1>Lounastus</h1>
+                        <p> Ruokaa tuoreista raaka-ainesta</p>
+                      </div>
+                      <div class="hero-button">
+                    </div>
+                </div>
+            </div>
+
+
+  <div id = "filter">
+    <h1>Ravintolat</h1>
+  Valitse haluamasi ravintolaketju</div>
+  <div id="napit">
+    <button id="sodexo">Sodexo</button>
+    <button id="compass">Compass Group</button>
+    <button id="reset">Show all</button>
+  </div>
+  <table id ="table_restaurants">
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+    </tr>
+    <!-- add restaurants here -->
+  </table>
+  <!-- modal -->
+  <dialog>
+    <!-- add restaurant info here when restaurant is clicked -->
+
+  </dialog>
+</body>
+
+
+
+<script>
+  function myFunction() {
+      var x = document.getElementById("Mynav");
+      if (x.className === "clearfix") {
+        x.className += "  responsive";
+      } else {
+        x.className = "clearfix";
+      }
+    }
+
+    const checkbox = document.getElementById("checkbox")
+  checkbox.addEventListener("change", () => {
+    document.body.classList.toggle("dark")
+  })</script>
+</html>
+
